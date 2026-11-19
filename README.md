@@ -79,8 +79,12 @@ git clone <this-repo> astrbot_plugin_dice
 
 ## 自测
 
-仓库里有 `test_dice.py`，不依赖 AstrBot 环境：
+仓库里有两个自测脚本：
 
 ```bash
-python test_dice.py
+python test_dice.py                 # 纯标准库，2832 项：解析、边界、分布、爆骰
+python test_handler.py              # 需 AstrBot 环境：6 个精确指令 + 不吞其他指令
 ```
+
+`test_handler.py` 默认从 `D:\QQNTBOT\apps\AstrBot` 读 AstrBot 源码，其他机器用
+`ASTRBOT_ROOT` 环境变量指到自己的 AstrBot 目录。
