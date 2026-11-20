@@ -32,6 +32,11 @@ from astrbot.api.event import AstrMessageEvent, filter
 
 from .dice_core import DiceError, USAGE, roll
 
+# 指令自声明：/权限 列表 按插件分组展示用（插件开发规范要求，见 docs/PLUGIN-DEV.md）
+DECLARED_COMMANDS: dict[str, tuple[str, str]] = {
+    "/r <表达式>": ("掷骰（同义别名：roll/dice/骰/掷骰/投骰）", "公开"),
+}
+
 ALIASES = {"roll", "dice", "骰", "掷骰", "投骰"}
 
 

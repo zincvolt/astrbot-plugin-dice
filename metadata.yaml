@@ -1,4 +1,4 @@
 name: astrbot_plugin_dice
-desc: 桌游骰娘：/r 1d20、/r 2d6+3、/r 4d6kh3，只输出随机数，不抢别的指令
+desc: 桌游骰娘：/r 1d20、/r 2d6+3、/r 4d6kh3，只输出随机数，不抢别的指令。整套 QQ 机器人方案主仓库：github.com/zincvolt/QQNTbotBUTafter261101
 author: local
 version: 1.0.0
